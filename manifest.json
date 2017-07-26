@@ -4,26 +4,23 @@
 	"description": "Make tab indented code more readable by forcing the tab size to 4 instead of 8",
 	"homepage_url": "https://github.com/sindresorhus/tab-size-on-github",
 	"manifest_version": 2,
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	},
 	"minimum_chrome_version": "36",
 	"icons": {
 		"128": "icon.png"
 	},
 	"permissions": [
-		"https://github.com/*/*",
+		"tabs",
+		"storage",
+		"background",
+    "https://github.com/*/*",
 		"https://gist.github.com/*/*",
 		"https://raw.githubusercontent.com/*/*"
 	],
-	"content_scripts": [
-		{
-			"run_at": "document_end",
-			"matches": [
-				"https://github.com/*/*",
-				"https://gist.github.com/*/*",
-				"https://raw.githubusercontent.com/*/*"
-			],
-			"css": [
-				"content.css"
-			]
-		}
-	]
+	"background": {
+    "scripts": ["background.js"]
+  }
 }
