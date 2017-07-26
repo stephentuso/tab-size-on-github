@@ -11,7 +11,7 @@ This fork makes the tab size configurable. [Original repo](https://github.com/si
 
 ## Install
 
-Install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/tab-size-on-github/ofjbgncegkdemndciafljngjbdpfmbkn) or [manually](http://superuser.com/a/247654/6877).
+Install it [manually](http://superuser.com/a/247654/6877).
 
 
 ## License
